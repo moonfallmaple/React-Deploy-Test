@@ -2,7 +2,7 @@
   "name": "hello-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://moonfallmaple.github.io/React-Deploy-Test/",
+  "homepage": "https://moonfallmaple.github.io/React-Deploy-Test",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
