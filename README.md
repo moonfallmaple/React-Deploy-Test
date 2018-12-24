@@ -1,4 +1,4 @@
-# React Deploy to Gitpage Test
+# Deploy React to Gitpage Test
 
 
 ## Table of Contents
