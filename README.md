@@ -1,68 +1,36 @@
-# Deploy React to Gitpage Test
-
-
-## Table of Contents
-* [Live Demo](#Live-Demo)
-* [How to deploy](#project-instructions)
-
-
-
-## Live Demo
- https://moonfallmaple.github.io/react-deploy-test/
-
-## How to deploy
-
-1. Create an empty repo at github. (No Readme, No gitignore, No license)<br/>
-
-2. Create a new react app named YYY. 
- ```
- create-react-app YYY
- ```
-3. open the YYY file, then install gh-pages package there 
-```
-npm install gh-pages –save-dev
-```
-4. Edit package.json file (XXX is your Github username, YYY is your repo name)
-
-> Add property "homepage": "http://XXX.github.io/YYY", 
-
-> Add property "predeploy": "npm run build",
-
-> Add property "deploy": "gh-pages -d build" (This step is to set your git-pages under gh-pages branch. )
+# My Reads APP
 
 <div  align="center">
-<img src="./json.jpg" width = "500" height = "500" alt="图片名称" align=center />
+Homepage
+<img src="./demo1.png" width = "900" height = "350" alt="图片名称" align=center /></b>
+
+SearchBooks
+<img src="./demo2.png" width = "1000" height = "600" alt="图片名称" align=center />
 </div>
 
-### Don't set **master** branch by yourself !!!
 
-When you add property "deploy": "gh-pages -d build" to package.json, you already create a git-page and set it under gh-pages branch. 
-<div  align="center">
-<img src="./branch.jpg" width = "400" height = "280" alt="图片名称" align=center />
-</div>
+## Description
+- This project's goal is to create a bookshelf app that allows to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that will use to persist information as you interact with the application.
 
-5. Initialize git in YYY file
-```
-git init
-```
+- Project created as part of the Udacity Front-End Developer Nanodegree.
 
-6. Set your remote git repo location
-```
-git remote add origin https://github.com/XXX/YYY.git
-```
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-7. Deploy
-```
-npm run deploy
-```
+## Run the Application
+In order to run the application you can:
 
-If you want to deploy react & react router to gitpage: need to add basename={process.env.PUBLIC_URL} to BrowserRouter
-```
-ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <App />
-    </BrowserRouter>
-  </Provider>
-  ,document.getElementById('root'));
-```
+Clone or fork this project:
+
+$ git clone https://github.com/moonfallmaple/myreads.git
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+
