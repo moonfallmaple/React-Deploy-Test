@@ -55,3 +55,14 @@ git remote add origin https://github.com/XXX/YYY.git
 ```
 npm run deploy
 ```
+
+If you want to deploy react & react router to gitpage: need to add basename={process.env.PUBLIC_URL} to BrowserRouter
+```
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <App />
+    </BrowserRouter>
+  </Provider>
+  ,document.getElementById('root'));
+```
